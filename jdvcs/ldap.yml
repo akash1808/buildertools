@@ -1,0 +1,10 @@
+- name: ensure a list of packages installed
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - openldap
+    - openldap-clients
+    - openldap-servers
+    - openldap-devel
+    - openldap-servers-sql

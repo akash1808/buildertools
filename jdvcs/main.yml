@@ -1,0 +1,7 @@
+---
+- hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+        - include_tasks: ldap.yml
+
